@@ -110,6 +110,161 @@
         </section>
     </nav>
 
+<!-- ============================Content========================= -->
+<section class="cart_slider">
+    <div class="container">
+        <div class="cart_slider_main">
+            <div class="cart_img">
+                <img src="assets/images/Perfumance-Cover-Photo.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Checkout page -->
+<section class="checkout_section">
+    <div class="container">
+        <div class="checkout_main">
+            <h2>অর্ডারটা তাহলে দিয়েই দিই</h2>
+            <div class="checkout_title">
+                <i class="fa-regular fa-calendar"></i>
+                <h3>Returning customer?</h3>
+                <a href="login.html">Click here to login</a>
+            </div>
+            <div class="checkout_address">
+                <div class="billing_details">
+                    
+                    <form action="">
+                        <h3>Billing details</h3>
+                        <div class="names">
+                            <div class="first_name">                                
+                                <label for="first_name">First Name<span>*</span></label> <br>
+                                <input type="text" name="first_name" id="first_name">
+                            </div>
+                            <div class="last_name">
+                                <label for="last_name">Last Name<span>*</span></label><br>
+                                <input type="text" name="last_name" id="last_name">
+                            </div>
+                        </div>
+                        <label for="com_name">Company name (optional)</label><br>
+                        <input type="text" name="com_name" id="com_name"><br>
+                        <label for="country">Country / Region <span>*</span></label><br>
+                        <h4>Bangladesh</h4><br>
+                        <label for="street">Street address <span>*</span></label><br>
+                        <input type="text" name="street" id="street" placeholder="street house & name"><br>
+                        <input type="text" name="apartment" id="" placeholder="Apertment flat etc (Optional)"><br>
+                        <label for="district">District <span>*</span></label><br>
+                        <select name="distric" id="distric"><br>
+                            <option value="select" selected> Select an option....</option>
+                            <option value="borisal">Borisal</option>
+                            <option value="borisal">Bhola</option>
+                            <option value="borisal">dhaka</option>
+                            <option value="borisal">khulna</option>
+                        </select> <br> 
+                        <label for="zipcode">Postcode / ZIP (optional)</label><br>
+                        <input type="text" name="zipcode" id="zipcode"><br>
+                        <label for="phone">Phone <span>*</span></label><br>
+                        <input type="text" name="phone" id="phpne"><br>
+                        <label for="email">Email address <span>*</span></label><br>
+                        <input type="text" name="email" id="email">  
+                    </form>
+                </div>
+                <div class="new_address">
+                    <form action="">
+                        <h3>Ship to a different address? </h3>
+                        <div class="names">
+                            <div class="first_name">                                
+                                <label for="first_name">First Name<span>*</span></label> <br>
+                                <input type="text" name="first_name" id="first_name">
+                            </div>
+                            <div class="last_name">
+                                <label for="last_name">Last Name<span>*</span></label><br>
+                                <input type="text" name="last_name" id="last_name">
+                            </div>
+                        </div>
+                        <label for="com_name">Company name (optional)</label><br>
+                        <input type="text" name="com_name" id="com_name"><br>
+                        <label for="country">Country / Region <span>*</span></label><br>
+                        <h4>Bangladesh</h4><br>
+                        <label for="street">Street address <span>*</span></label><br>
+                        <input type="text" name="street" id="street" placeholder="street house & name"><br>
+                        <input type="text" name="apartment" id="" placeholder="Apertment flat etc (Optional)"><br>
+                        <label for="district">District <span>*</span></label><br>
+                        <select name="distric" id="distric"><br>
+                            <option value="select" selected>Select an option...</option>
+                            <option value="borisal">Borisal</option>
+                            <option value="borisal">Bhola</option>
+                            <option value="borisal">dhaka</option>
+                            <option value="borisal">khulna</option>
+                        </select> <br> 
+                        <label for="zipcode">Postcode / ZIP (optional)</label><br>
+                        <input type="text" name="zipcode" id="zipcode"><br>
+                        <label for="order_note">Order notes (optional)</label><br>
+                        <input type="text" name="order_note" id="order_note" placeholder="Note about your order">
+                    </form>
+                </div>
+            </div>
+            <div class="checkout_orders">
+                <input type="checkbox" name="check_order" id="check_order">
+                <label for="check_order"> Create an account?</label>
+                <h5>Your order</h5>
+                <table class="checkout_table">
+                    <tr>
+                        <th>Product</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td class="td1">হোয়াইট মাস্ক - সাড়ে চৌদ্দ মিলি ( 14.5 mL )  × 1	</td>
+                        <td>৳ 360.00</td>
+                    </tr>
+                    <tr>
+                        <th>Subtotal</th>
+                        <td><h6>4,400.00</h6></td>
+                    </tr>
+                    <tr>
+                        <th>Shipping</th>
+                        <td>
+                            <form>
+                               <input type="radio" name="address" id="dhaka" value="dhaka" checked>
+                               <label for="dhaka">৬০টাকা -- ঢাকা শহর ও চট্টগ্রাম শহরে ক্যাশ অন ডেলিভারি [ পণ্য বুঝে পেয়ে ডেলিভারিম্যানকে টাকা পে করবেন ]: <h6>৳ 60.00</h6></label><br>
+                               <input type="radio" name="address" id="near_dhaka" value="near_dhaka">
+                               <label for="near_dhaka">১০০ টাকা - ঢাকার আশেপাশের (টঙ্গী, তুরাগ, গাজীপুর, সাভার, নারায়নগঞ্জ, কেরানীগঞ্জ, দোহার, মুন্সিগঞ্জ) অঞ্চলে ক্যাশ অন ডেলিভারি [পণ্য গ্রহণের সময় ডেলিভারিম্যানের কাছে টাকা দিবেন]: <h6>৳ 100.00</h6></label><br>
+                               <input type="radio" name="address" id="anyware" value="anyware">
+                               <label for="anyware">১০০ টাকা -- সমগ্র বাংলাদেশ জুড়ে , সুন্দরবন কুরিয়ারের মাধ্যমে [ আপনাকে ডেলিভারি চার্জসহ সম্পূর্ণ বিল আগে বিকাশ করতে হবে ]: <h6>৳ 100.00</h6></label><br>
+                               <input type="radio" name="address" id="showroom" value="showroom">
+                               <label for="showroom">শোরুমে এসে নিজেই নিয়ে যেতে পারেন ! শোরুমের ঠিকানাঃ (১) ঢাকাঃ দোকান নং ১৭১ ও ১৭৯, তৃতীয় তলা, খিলগাঁও পাকা মসজিদ মার্কেট, [তালতলা সুপারমার্কেট এর বিপরীতে], খিলগাঁও। (২) চট্টগ্রামঃ দোকান নং ১৬১, নিচতলা, খুলশি টাউন সেন্টার কনকর্ড, খুলশি-২</label><br>
+
+                            </form>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td><h6>৳ 4,500.00</h6></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="checkout_info">
+                <div class="info_content">
+                    <form action="#">
+                        <input type="radio" name="pay_type" id="cash" checked>
+                        <label for="cash">ক্যাশ অন ডেলিভারি [ শুধুমাত্র ঢাকা ও চট্টগ্রামের অর্ডারে ]</label><br>
+                        <p>ডেলিভারিম্যান আপনার কাছে পণ্য পৌছে দিয়ে এরপরে টাকা বুঝে নিবে</p>
+                        <input type="radio" name="pay_type" id="bkash">
+                        <label for="bkash"> বিকাশে পরিশোধ ( ঢাকা ও চট্টগ্রামের বাইরের অর্ডারগুলোর ক্ষেত্রে )</label>
+                    </form>
+                </div>
+            </div>
+            <div class="info_btn">
+                <a href="payment.html"><button type="submit">Place order</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  
+
 <!-- Footer -->
 <section class="footer_top_section">
     <div class="container">

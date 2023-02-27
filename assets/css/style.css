@@ -7,6 +7,9 @@
     text-decoration: none;
     outline: none;
 }
+body a:hover{
+    text-decoration: underline;
+}
 body{
     background: #FFFFFF;
     font-family: 'Baloo Da 2', cursive;
@@ -1364,4 +1367,203 @@ margin: 0;
     .shoping_cart_main .cart_total table th{
         width: auto;
     }
+}
+
+
+/* ============================checkout_page============================= */
+.checkout_section{
+    padding: 70px 0;
+}
+.checkout_main{
+}
+.checkout_main h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: #000;
+    line-height: 62px;
+    text-align: center;
+}
+.checkout_main .checkout_title{
+    background: #F7F6F7;
+    padding: 20px 20px;
+    border-top: 3px solid #1E85BE;
+    text-align: left;
+}
+.checkout_main .checkout_title h3{
+    display: inline-block;
+    margin-left: 10px;
+    color: rgb(81, 81, 81);
+    font-size: 17px;
+    font-weight: 400;
+}
+.checkout_main .checkout_title i{
+    color: #1E85BE;
+    font-size: 19px;
+}
+.checkout_main .checkout_title a{
+    font-size: 17px;
+}
+.checkout_main .checkout_address{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 5%;
+    margin: 20px auto;
+}
+.checkout_main .checkout_address .billing_details{
+    width: 47%;
+}
+.checkout_main .checkout_address select{
+    border-color: #ddd;
+}
+.checkout_main .checkout_address .billing_details input, select{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+    margin: 10px auto;
+    padding: 5px 0;
+    border-color: transparent;
+}
+.checkout_main .checkout_address .new_address{
+    width: 47%;
+}
+.checkout_main .checkout_address .new_address .new_addr_chack span{
+    text-align: left;
+}
+.checkout_main .checkout_address .new_address input, select{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+    margin: 10px auto;
+    padding: 5px 0;
+    border-color: transparent;
+}
+.checkout_main .checkout_address label{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+}
+.checkout_address .billing_details, .new_address{
+    width: 100%;
+    text-align: left;
+}
+.checkout_main .checkout_address h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(51, 51, 51);
+}
+.checkout_main .checkout_address span{
+    font-size: 25px;
+    color: red;
+    margin-left: 2px;
+}
+.checkout_main .checkout_address .names{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 4%;
+    width: 100%;
+}
+.checkout_main .checkout_address .first_name{
+    width: 48%;
+}
+.checkout_main .checkout_address .last_name{
+    width: 48%;
+}
+.checkout_main .checkout_address .names input{
+    width: 100%;
+    height: 40px;
+    border-color: transparent;
+}
+
+.checkout_main .checkout_orders h5{
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    line-height: 28px;
+}
+.checkout_main .checkout_orders table{
+    border: 1px solid #ddd;
+    border-top: transparent;
+    border-bottom: transparent;
+    border-collapse: collapse;
+}
+.checkout_main .checkout_orders{
+    border-radius: 8px;
+}
+.checkout_main .checkout_orders table tr, table th, td{
+    border-bottom: 1px solid #ddd;
+}
+.checkout_main .checkout_orders table label, h6{
+    color: rgb(51, 51, 51);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.checkout_main .checkout_orders table th ,td{
+    margin-right: 20px;
+}
+.checkout_main .checkout_orders table .td1{
+    padding: 0 15px;
+}
+.checkout_main .checkout_info{
+    margin-top: 20px;
+    background: #EBE9EB;
+    padding: 15px 15px;
+}
+.checkout_main .checkout_info .info_content label, p{
+    padding: 15px 15px;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.checkout_main .checkout_info p{
+    background: #DFDCDE;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+.checkout_main .info_btn{
+    text-align: right;
+    padding: 15px 15px;
+    border-top: 3px solid #DEDBDE;
+    background: #EBE9EB;
+}
+.checkout_main .info_btn button{
+    border-color: transparent;
+    background: #96588A;
+    padding: 7px 15px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    opacity: 90%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.checkout_main .info_btn button:hover{
+    opacity: 100%;
+}
+
+/* -----------------Responsive checkout_page----------------- */
+@media (max-width: 767px) {
+    .checkout_main .checkout_address{
+        flex-direction: column;
+    }
+    .checkout_main .checkout_address .new_address{
+        width: 100%;
+    }
+    .checkout_main .checkout_address .billing_details{
+        width: 100%;
+    }
+    .checkout_main .info_btn button{
+        width: 100%;
+    }
+
 }
