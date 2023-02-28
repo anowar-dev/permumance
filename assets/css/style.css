@@ -397,15 +397,6 @@ html{
 .video_inner .text a:hover .visible_icon{
     color: #205BCE;
 }
-/* .video_inner .text a:hover .hover_icon{ */
-    /* display: block; */
-    /* color: #205BCE; */
-    /* font-weight: 400; */
-    /* margin-left: 10px; */
-/* } */
-.video_inner .text a .hover_icon{
-    display: none;
-}
 
 
 /* orgaic Product */
@@ -799,8 +790,7 @@ html{
         width: 50%;
         border: 1px solid #ddd;
         box-shadow: 0 0 10px #444;
-        visibility: hidden;
-        opacity: 0;
+        left: -100%;
     }
     .main_menu .main_menu_ul{
         flex-direction: column;
@@ -832,10 +822,11 @@ html{
     .responsive_nav .logo_nav_bar .nav_logo a img{
         width: 70%;
     }
-    .responsive_nav .logo_nav_bar .bar_icon :focus .menu_bar{
-        display: block;
-        visibility: visible;
-        opacity: 1;
+    .bar_icon i:checked ~ .menu_bar{
+        left: 0;
+    }
+    .bar_icon i:focus .menu_bar{
+        left: 0;
     }
 
 }
@@ -1166,6 +1157,7 @@ html{
 }
 .cart_slider_main .cart_img img{
     width: 100%;
+    height: 100%;
 }
 .shoping_cart{
     margin: 60px auto;
@@ -1591,7 +1583,7 @@ margin: 0;
     align-items: center;
 }
 .user_main .user_content h2{
-    font-size: 46px;
+    font-size: 35px;
     font-weight: 400;
     color: #000000; 
 }
